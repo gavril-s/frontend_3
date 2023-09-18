@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+		<nav>
+            <img id="headerLogo" src="images/favicon.ico" alt="Иконка">
+			<ul>
+                <li><a href="#top">К началу</a></li>     
+                <li><a href="#moscow">Погода в Москве</a></li>
+                <li><a href="#other-cities">Погода в других городах</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+			</ul>
+			<hr>
+		</nav>
+	</header>
+
+    <main>
+        <section>
+        <!--Заголовок первого уровня (начало страницы)-->
+        <h1 id="top">Погода</h1>
+            <article>
+                <!--Блок с цитатой-->
+                <b><i>
+                    <!--Цитата-->
+                    <blockquote><q>Холод - только для погоды. Не впускайте его в свою душу.</q></blockquote>
+                    <!--Источник цитаты-->
+                    <cite>
+                        <a id="quote-link" href="https://resheto.net/raznosti/1525-tsitaty-o-pogode">
+                            Федор Достоевский
+                        </a>
+                    </cite>
+                </i></b>
+            </article>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="moscow">Погода в Москве</h2>
+            <!--Изображение со ссылкой на сайт с погодой-->
+            <a href="https://www.gismeteo.ru/weather-moscow-4368/">
+                <img class="center picture" src="images/moscow.jpg" alt="Москва" width="500">
+            </a>
+            <!--Упорядоченный список с погодой на сегодня и завтра-->
+            <ol>
+                <li>
+                    <p>Погода на <strong>сегодня</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +9 - +17 <sup>o</sup>C</li>
+                        <li>Ветер: 6 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Погода на <strong>завтра</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +14 - +20 <sup>o</sup>C</li>
+                        <li>Ветер: 3 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="other-cities">Погода в других городах</h2>
+            <!--Изображение-карта с тремя областями (треугольник, прямоугольник, круг)-->
+            <img class="center picture" src="images/other-cities.png" alt="Другие города" width="500" usemap="#map">
+            <map name="map">
+                <area shape="polygon" coords="20,20,160,20,80,470" href="https://www.gismeteo.ru/weather-sankt-peterburg-4079/">
+                <area shape="rectangle" coords="180,20,325,490" href="https://www.gismeteo.ru/weather-nizhny-novgorod-4355/">
+                <area shape="circle" coords="410,250,70" href="https://www.gismeteo.ru/weather-yekaterinburg-4517/">
+            </map>
+            <!--Аннотация к изображению-->
+            <aside class="center">
+                <small>
+                    <ol type="I" start="I">
+                        <li>Санкт-Петербург</li>
+                        <li>Нижний Новгород</li>
+                        <li>Екатеринбург</li>
+                    </ol>
+                </small>
+            </aside>
+            <article>
+                <!--Список с погодой на 5 дней (оформлен как список описаний)-->
+                <dl>
+                    <dt><u>Сегодня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +21 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +18 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
+
+                    <dt><u>Завтра</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +23 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +19 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +11 <sup>o</sup>C</dd>
+
+                    <dt><u>Послезавтра</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +24 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
+
+                    <dt><u>Через <strong>3</strong> дня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
+
+                    <dt><u>Через <strong>4</strong> дня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2 id="contacts">Контакты</h2>
+            <!--Ссылки на электронную почту и номер телефона-->
+            <address>
+                <a href="mailto:sendemail@gmail.com">Отправить <abbr>email</abbr></a><br>
+            </address>
+            <address>
+                <a href="tel:01234567890">Позвонить</a>
+            </address>
+        </section>
+        
+        <section>
+            <!--Заголовок третьего уровня-->
+            <h3>Навигация</h3>
+            <!--Список якорей на разделы страницы-->
+            <pre>
+<a href="#top">К началу</a>     <a href="#moscow">Погода в Москве</a>
+<a href="#other-cities">Погода в других городах</a>     <a href="#contacts">Контакты</a>
+            </pre>
+        </section>
+    </footer>
+</body>
+</html>
