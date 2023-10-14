@@ -1,0 +1,53 @@
+@media (min-width: 1450px) {
+    .sidebar {
+        width: 13%;
+        position: fixed;
+        border-style: double;
+        padding: 0% 2%;
+    }
+
+    main {
+        width: 40%;
+    }
+
+    footer {
+        width: 40%;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: rgb(219, 247, 233);
+        z-index: 1;
+        width: 40%;
+        margin: auto auto;
+    }
+
+    .mobileNav {
+        visibility: hidden;
+        display: none;
+    }
+
+    #topLeftSidebar {
+        top: 7%;
+        left: 5%;
+    }
+    
+    #topLeftSidebar ul {
+        list-style: square;
+    }
+    
+    #bottomLeftSidebar {
+        top: 45%;
+        left: 5%;
+    }
+    
+    #rightSidebar {
+        top: 7%;
+        right: 5%;
+    }
+
+    .galleryImage {
+        max-width: 30%;
+    }
+}

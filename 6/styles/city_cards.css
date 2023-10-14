@@ -1,0 +1,41 @@
+#city-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 30%;  
+    height: 25em;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.card:hover {
+    height: 30em;  
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.card-image img {
+    width: 100%;
+    height: 25em;
+}
+
+.card-content { 
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+}
+
+.card:hover .card-content {
+    margin: auto 5%;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.2s;
+}
