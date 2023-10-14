@@ -117,7 +117,7 @@
 }
 
 .button4::after {
-    content: '\2192'; /* Right arrow character */
+    content: '\2192';
     position: absolute;
     right: -1em;
     opacity: 0;
