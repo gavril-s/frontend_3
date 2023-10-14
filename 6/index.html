@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+		<nav class="desktopNav">
+            <img id="headerLogo" src="images/favicon.ico" alt="Иконка">
+			<ul id="headerNavList">
+                <li><a href="#top">К началу</a></li>     
+                <li><a href="#moscow">Погода в Москве</a></li>
+                <li><a href="#other-cities">Погода в других городах</a></li>
+                <li><a href="#how-it-works">Как работает прогноз погоды?</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+			</ul>
+			<hr>
+		</nav>
+
+        <div class="mobileNav">
+            <div class="burgerMenu">
+                <input id="burgerToggle" type="checkbox" />
+                <label class="burgerButton" for="burgerToggle">
+                    <span></span>
+                </label>
+            
+                <ul class="burgerBox">
+                    <li><a class="burgerItem" href="#top">К началу</a></li>
+                    <li><a class="burgerItem" href="#moscow">Погода в Москве</a></li>
+                    <li><a class="burgerItem" href="#other-cities">Погода в других городах</a></li>
+                    <li><a class="burgerItem" href="#how-it-works">Как работает прогноз погоды</a></li>
+                    <li><a class="burgerItem" href="#gallery">Галерея</a></li>
+                    <li><a class="burgerItem" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+ 
+            <h2>Погода</h2>
+            <img src="images/favicon.ico" alt="Иконка"></img>
+        </div>
+	</header>
+
+    <main>
+        <section>
+        <!--Заголовок первого уровня (начало страницы)-->
+        <h1 id="top">Погода</h1>
+            <article>
+                <!--Блок с цитатой-->
+                <b><i>
+                    <!--Цитата-->
+                    <blockquote><q>Холод - только для погоды. Не впускайте его в свою душу.</q></blockquote>
+                    <!--Источник цитаты-->
+                    <cite>
+                        <a id="quote-link" href="https://resheto.net/raznosti/1525-tsitaty-o-pogode">
+                            Федор Достоевский
+                        </a>
+                    </cite>
+                </i></b>
+            </article>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="moscow">Погода в Москве</h2>
+            <!--Изображение со ссылкой на сайт с погодой-->
+            <a href="https://www.gismeteo.ru/weather-moscow-4368/">
+                <img class="center picture" src="images/moscow.jpg" alt="Москва" width="500">
+            </a>
+            <!--Упорядоченный список с погодой на сегодня и завтра-->
+            <ol>
+                <li>
+                    <p>Погода на <strong>сегодня</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +3 - +17 <sup>o</sup>C</li>
+                        <li>Ветер: 6 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Погода на <strong>завтра</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +14 - +20 <sup>o</sup>C</li>
+                        <li>Ветер: 3 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="other-cities">Погода в других городах</h2>
+            
+            <div id="city-cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/spb.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Санкт-Петербург</h3>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/novgorod.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Нижний Новгород</h3>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/ekb.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Екатеринбург</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <article>
+                <!--Список с погодой на 5 дней (оформлен как список описаний)-->
+                <dl>
+                    <dt><u>Сегодня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +21 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +18 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
+
+                    <dt><u>Завтра</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +23 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +19 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +11 <sup>o</sup>C</dd>
+
+                    <dt><u>Послезавтра</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +24 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
+
+                    <dt><u>Через <strong>3</strong> дня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
+
+                    <dt><u>Через <strong>4</strong> дня</u></dt>
+                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
+                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
+                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="how-it-works">Как работает прогноз погоды?</h2>
+            <img id="supercomputerImage" src="images/supercomputer.jpg">
+            <p>
+                Прогноз погоды составляется с использованием различных научных методов и инструментов, включая наблюдения,
+                компьютерные моделирование и анализ данных. Вот основные шаги, которые включают в себя процесс составления прогноза погоды:
+            </p>
+            <ul>
+                <li><p>
+                    <b>Сбор данных:</b> Сначала необходимо собрать множество данных о текущем состоянии атмосферы.
+                    Это включает в себя измерение температуры, давления, влажности, скорости и направления ветра,
+                    атмосферного давления и других параметров на разных высотах в атмосфере. Для этого используются
+                    метеорологические приборы, радары, сателлиты и даже аэрозонды.
+                </p></li>
+                
+                <li><p>
+                    <b>Анализ данных:</b> Собранные данные анализируются для определения текущего состояния атмосферы.
+                    Метеорологи используют методы статистики и численного анализа данных, чтобы понять, какие процессы происходят в атмосфере.
+                </p></li>
+
+                <li><p>
+                    <b>Создание компьютерных моделей:</b> Метеорологические службы используют компьютерные модели атмосферы,
+                    которые основаны на физических законах, чтобы предсказать, как будет развиваться погода в будущем.
+                    Эти модели учитывают сложные взаимодействия атмосферных процессов, такие как конвекция,
+                    циркуляция воздуха и воздействие солнечного излучения.
+                </p></li>
+
+                <li><p>
+                    <b>Внесение начальных условий:</b> Для запуска модели необходимо ввести начальные условия,
+                    которые описывают текущее состояние атмосферы. Эти начальные условия получаются из данных, собранных на шаге 1.
+                </p></li>
+
+                <li><p>
+                    <b>Вычисление прогноза:</b> Компьютерная модель выполняет расчеты на основе начальных условий и физических законов.
+                    Модель предсказывает, как будут меняться параметры погоды (температура, осадки, ветер и др.)
+                    в течение определенного периода времени.
+                </p></li>
+
+                <li><p>
+                    <b>Проверка и коррекция:</b> Полученные прогнозы сравниваются с реальными данными о погоде, чтобы оценить их точность.
+                    Если прогноз оказывается неточным, метеорологи могут корректировать модель,
+                    внести изменения в начальные условия или учесть дополнительные данные.
+                </p></li>
+
+                <li><p>
+                    <b>Публикация и интерпретация:</b> Итоговые прогнозы публикуются для широкой общественности и других заинтересованных сторон.
+                    Метеорологи интерпретируют результаты и предостерегают общественность от возможных погодных явлений,
+                    таких как штормы, сильные дожди или жары.
+                </p></li>
+            </ul>
+            <p>
+                Прогнозы погоды могут быть составлены на различные периоды времени: краткосрочные (несколько часов вперед),
+                среднесрочные (несколько дней) и долгосрочные (несколько недель). Точность прогноза обычно уменьшается с
+                увеличением времени, поскольку атмосферные процессы становятся более сложными и
+                переменными на долгосрочных временных интервалах.
+            </p>
+
+            <div class="video-card">
+                <div class="video-card-video">
+                    <iframe width="95%" height="400rem" src="https://www.youtube.com/embed/h5j8wZgfui4"></iframe>
+                </div>
+                <div class="video-card-content">
+                    <b>Видео</b>
+                    <p>Это видео о том, почему прогнозы погоды часто оказываются неверными</p>
+                </div>
+            </div>  
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/564x/b0/bf/ca/b0bfca432f05e73ca28dc144667f83c2.jpg" class="galleryImage">			
+                <img src="https://i.pinimg.com/564x/1f/7b/32/1f7b3235ed0d3481c064e7133331bbff.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/bb/74/d1/bb74d135520764c19ba68994f09366d5.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/04/64/77/0464775f12b79472a0832592706ef58b.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/9d/bc/77/9dbc779ef27b5bb2ed45541a3641fc6a.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/68/d8/89/68d8895c42113cd2d677eb2576394877.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/df/16/3b/df163b410bb587cbc7ea5ad7d6bd5d58.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/e4/f1/17/e4f11727f81646d47f357cc931842895.jpg" class="galleryImage">	
+            </div>
+        </section>
+
+        <section id="topLeftSidebar" class="sidebar">
+            <h3>Другие сайты с погодой</h3>
+            <ul>
+                <li>
+                    <a href="https://www.gismeteo.ru/">Gismeteo</a>
+                    <ul>
+                        <li><a href="https://www.gismeteo.ru/maps/eur/prc/">Карта осадков</a></li>
+                        <li><a href="https://www.gismeteo.ru/maps/eur/temp/">Карта температуры</a></li>
+                        <li><a href="https://www.gismeteo.ru/maps/eur/wind/">Карта ветров</a></li>
+                        <li><a href="https://www.gismeteo.ru/maps/eur/clou/">Карта облачности</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://yandex.ru/pogoda">Яндекс.Погода</a>
+                    <ul>
+                        <li><a href="https://yandex.ru/pogoda/maps">Карта осадков</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    
+        <section id="bottomLeftSidebar" class="sidebar">
+            <h3>Отправить отчёт об ошибке</h3>
+            <form method="get">
+                <label for="error-type">
+                    Тип ошибки
+                    <select name="error-type" multiple size="2" required>
+                        <option value="typo">Опечатка в тексте</option>
+                        <option value="bug">Баг в работе логики</option>
+                    </select>
+                </label>
+    
+                <label for="error-text">
+                    Описание ошибки
+                    <textarea
+                        placeholder="Подробный текст с описанием ошибки"
+                        name="error-text"
+                        cols="25"
+                        rows="5"
+                        minlength="50"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                </label>
+                <label for="error-time">
+                    Время возникновения ошибки
+                    <input type="datetime-local" min="2023-01-01" max="2024-01-01" name="error-time">
+                </label>
+                <button class="button1">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </section>
+    
+        <section id="rightSidebar" class="sidebar">
+            <h3>Регистрация</h3>
+            <form method="get" name="register-form">
+                <label for="register-name">
+                    Имя
+                    <input 
+                        type="text"
+                        placeholder="Иван Иванов"
+                        name="register-name"
+                        required
+                    >
+                </label>
+                <label for="register-phone">
+                    Телефон
+                    <input 
+                        type="tel"
+                        placeholder="+79999999999"
+                        name="register-phone"
+                        pattern="^\+(?:\d{1,4}\s*){1,14}\d$"
+                    >
+                </label>
+                <label for="register-email">
+                    Email
+                    <input
+                        type="email"
+                        placeholder="ivanov@example.com"
+                        name="register-email"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                        required
+                    >
+                </label>
+                <label for="register-password">
+                    Пароль
+                    <input
+                        type="password"
+                        placeholder="··········"
+                        name="register-password"
+                        required
+                    >
+                </label>
+                <label for="register-photo">
+                    Фото профиля
+                    <input type="file" class="button2" name="register-photo">
+                </label>
+                <label for="register-subscription">
+                    Получать данные о погоде на почту
+                    <input type="checkbox" name="register-subscription" checked>
+                </label>
+                <fieldset id="city-choice">
+                    <legend>Город проживания</legend>
+                    <label for="register-city">
+                        <input type="radio" name="register-city">
+                        Москва
+                    </label>
+                    <label for="register-city">
+                        <input type="radio" name="register-city">
+                        Санкт-Петербург
+                    </label>
+                    <label for="register-city">
+                        <input type="radio" name="register-city">
+                        Нижний Новгород
+                    </label>
+                </fieldset>
+                <label id="registration-submit" for="register-submit">
+                    <button name="register-submit" class="button3">
+                        <span>Отправить</span>
+                    </button>
+                    <button name="register-reset" class="button4">
+                        <span>Сбросить</span>
+                    </button>
+                </label>
+            </form>
+        </section>
+
+        <section id="notifications">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="images/notification.png">
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Ветер!</a>
+                  <a href="#">Дождь!</a>
+                  <a href="#">Град!</a>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2 id="contacts">Контакты</h2>
+            <i>Где мы находимся?</i>
+            <div id="map" style="width: 100%">
+                <iframe 
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Moscow,%20Russia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
+            </div>
+            <!--Ссылки на электронную почту и номер телефона-->
+            <address>
+                <a href="mailto:sendemail@gmail.com">Отправить <abbr>email</abbr></a><br>
+            </address>
+            <address>
+                <a href="tel:01234567890">Позвонить</a>
+            </address>
+        </section>
+        
+        <section>
+            <!--Заголовок третьего уровня-->
+            <h3>Навигация</h3>
+            <!--Список якорей на разделы страницы-->
+            <pre>
+<a href="#top">К началу</a>     <a href="#moscow">Погода в Москве</a>   <a href="#other-cities">Погода в других городах</a>
+<a href="#how-it-works">Как работает прогноз погоды?</a>    <a href="#gallery">Галерея</a>     <a href="#contacts">Контакты</a>
+            </pre>
+        </section>
+    </footer>
+</body>
+</html>
