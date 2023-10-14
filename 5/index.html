@@ -9,17 +9,37 @@
 </head>
 <body>
     <header>
-		<nav>
+		<nav class="desktopNav">
             <img id="headerLogo" src="images/favicon.ico" alt="Иконка">
 			<ul id="headerNavList">
                 <li><a href="#top">К началу</a></li>     
                 <li><a href="#moscow">Погода в Москве</a></li>
                 <li><a href="#other-cities">Погода в других городах</a></li>
-                <li><a href="#how-it-workk">Как работает прогноз погоды?</a></li>
+                <li><a href="#how-it-works">Как работает прогноз погоды?</a></li>
                 <li><a href="#contacts">Контакты</a></li>
 			</ul>
 			<hr>
 		</nav>
+
+        <div class="mobileNav">
+            <div class="burgerMenu">
+                <input id="burgerToggle" type="checkbox" />
+                <label class="burgerButton" for="burgerToggle">
+                    <span></span>
+                </label>
+            
+                <ul class="burgerBox">
+                    <li><a class="burgerItem" href="#top">К началу</a></li>
+                    <li><a class="burgerItem" href="#moscow">Погода в Москве</a></li>
+                    <li><a class="burgerItem" href="#other-cities">Погода в других городах</a></li>
+                    <li><a class="burgerItem" href="#how-it-works">Как работает прогноз погоды</a></li>
+                    <li><a class="burgerItem" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+ 
+            <h2>Погода</h2>
+            <img src="images/favicon.ico" alt="Иконка"></img>
+        </div>
 	</header>
 
     <main>
@@ -180,6 +200,20 @@
             <iframe width="95%" height="400rem" src="https://www.youtube.com/embed/h5j8wZgfui4"></iframe>
         </section>
 
+        <section id="gallery">
+            <h3>Галерея</h3>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/564x/b0/bf/ca/b0bfca432f05e73ca28dc144667f83c2.jpg" class="galleryImage">			
+                <img src="https://i.pinimg.com/564x/1f/7b/32/1f7b3235ed0d3481c064e7133331bbff.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/bb/74/d1/bb74d135520764c19ba68994f09366d5.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/04/64/77/0464775f12b79472a0832592706ef58b.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/9d/bc/77/9dbc779ef27b5bb2ed45541a3641fc6a.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/68/d8/89/68d8895c42113cd2d677eb2576394877.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/df/16/3b/df163b410bb587cbc7ea5ad7d6bd5d58.jpg" class="galleryImage">	
+                <img src="https://i.pinimg.com/564x/e4/f1/17/e4f11727f81646d47f357cc931842895.jpg" class="galleryImage">	
+            </div>
+        </section>
+
         <section id="topLeftSidebar" class="sidebar">
             <h3>Другие сайты с погодой</h3>
             <ul>
@@ -309,8 +343,6 @@
             <i>Где мы находимся?</i>
             <div id="map" style="width: 100%">
                 <iframe 
-                    width="100%"
-                    height="600"
                     frameborder="0"
                     scrolling="no"
                     marginheight="0"
@@ -333,7 +365,7 @@
             <!--Список якорей на разделы страницы-->
             <pre>
 <a href="#top">К началу</a>     <a href="#moscow">Погода в Москве</a>   <a href="#other-cities">Погода в других городах</a>
-<a href="#how-it-workk">Как работает прогноз погоды?</a>    <a href="#contacts">Контакты</a>
+<a href="#how-it-works">Как работает прогноз погоды?</a>    <a href="#contacts">Контакты</a>
             </pre>
         </section>
     </footer>
