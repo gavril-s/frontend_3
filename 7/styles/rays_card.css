@@ -1,0 +1,51 @@
+.rays-card {
+    width: 200px;
+    height: 300px;
+    background: #1D1F20;
+    border-radius: 10px;
+    border-style: dashed;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    padding: 10%;
+}
+  
+.rays-card h2, .rays-card p {
+    padding: 20px;
+    color: #fff;
+}
+  
+.rays-card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 340px;
+    width: 240px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 10px;
+    border-width: 0;
+    z-index: -0;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    padding: 0;
+    margin: 0;
+}
+
+.rays-card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.3);
+}
+  
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
