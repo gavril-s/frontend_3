@@ -1,11 +1,4 @@
 @media (min-width: 1450px) {
-    .sidebar {
-        width: 13%;
-        position: fixed;
-        border-style: double;
-        padding: 0% 2%;
-    }
-
     main {
         width: 40%;
     }
@@ -15,8 +8,6 @@
     }
 
     header {
-        position: sticky;
-        top: 0;
         background-color: color-mix(in srgb, var(--background-color) var(--background-opacity), white);
         z-index: 1;
         width: 40%;
@@ -26,25 +17,6 @@
     .mobile-nav {
         visibility: hidden;
         display: none;
-    }
-
-    #top-left-sidebar {
-        top: 7%;
-        left: 5%;
-    }
-    
-    #top-left-sidebar ul {
-        list-style: square;
-    }
-    
-    #bottom-left-sidebar {
-        top: 45%;
-        left: 5%;
-    }
-    
-    #right-sidebar {
-        top: 7%;
-        right: 5%;
     }
 
     .gallery-image {

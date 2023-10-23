@@ -45,20 +45,6 @@
 	</header>
 
     <main>
-        <section>
-        <div class="rays-card">
-            <h2>Карточка 1</h2>
-            <p>Описание карточки 1.</p>
-        </div>
-        <div class="rays-card">
-            <h2>Карточка 2</h2>
-            <p>Описание карточки 2.</p>
-        </div>
-        <div class="rays-card">
-            <h2>Карточка 3</h2>
-            <p>Описание карточки 3.</p>
-        </div>
-
         <!--Заголовок первого уровня (начало страницы)-->
         <h1 id="top">Погода</h1>
             <article>
@@ -107,42 +93,13 @@
         <section>
             <!--Заголовок второго уровня-->
             <h2 id="other-cities">Погода в других городах</h2>
-            
-            <div id="city-cards">
-                <div class="city-card">
-                    <div class="city-card-image">
-                        <img src="images/spb.jpg">
-                    </div>
-                    <div class="city-card-content">
-                        <h3>Санкт-Петербург</h3>
-                    </div>
-                </div>
-                
-                <div class="city-card">
-                    <div class="city-card-image">
-                        <img src="images/novgorod.jpg">
-                    </div>
-                    <div class="city-card-content">
-                        <h3>Нижний Новгород</h3>
-                    </div>
-                </div>
-                
-                <div class="city-card">
-                    <div class="city-card-image">
-                        <img src="images/ekb.jpg">
-                    </div>
-                    <div class="city-card-content">
-                        <h3>Екатеринбург</h3>
-                    </div>
-                </div>
-            </div>
-            
+
             <div id="glassmorphism-cards">
                 <div class="glassmorphism-card-container">
                     <div class="glassmorphism-card">
                         <div class="glassmorphism-card-content">
-                            <h2>Card 1</h2>
-                            <p>This is the first card.</p>
+                            <h2>Санкт-Петербург</h2>
+                            <p>-1 Дождь</p>
                         </div>
                     </div>
                     <div class="glassmorphism-card-square-container">
@@ -153,8 +110,8 @@
                 <div class="glassmorphism-card-container">
                     <div class="glassmorphism-card">
                         <div class="glassmorphism-card-content">
-                            <h2>Card 2</h2>
-                            <p>This is the second card.</p>
+                            <h2>Нижний Новгород</h2>
+                            <p>+5 Ветрено</p>
                         </div>
                     </div>
                     <div class="glassmorphism-card-square-container">
@@ -165,8 +122,8 @@
                 <div class="glassmorphism-card-container">
                     <div class="glassmorphism-card">
                         <div class="glassmorphism-card-content">
-                            <h2>Card 3</h2>
-                            <p>This is the third card.</p>
+                            <h2>Екатеринбург</h2>
+                            <p>-5 Снег</p>
                         </div>
                     </div>
                     <div class="glassmorphism-card-square-container">
@@ -175,36 +132,6 @@
                     </div>
                 </div>
             </div>
-
-            <article>
-                <!--Список с погодой на 5 дней (оформлен как список описаний)-->
-                <dl>
-                    <dt><u>Сегодня</u></dt>
-                    <dd><em>Санкт-Петербург</em> - +21 <sup>o</sup>C</dd>
-                    <dd><em>Нижний Новгород</em> - +18 <sup>o</sup>C</dd>
-                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
-
-                    <dt><u>Завтра</u></dt>
-                    <dd><em>Санкт-Петербург</em> - +23 <sup>o</sup>C</dd>
-                    <dd><em>Нижний Новгород</em> - +19 <sup>o</sup>C</dd>
-                    <dd><em>Екатеринбург</em> - +11 <sup>o</sup>C</dd>
-
-                    <dt><u>Послезавтра</u></dt>
-                    <dd><em>Санкт-Петербург</em> - +24 <sup>o</sup>C</dd>
-                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
-                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
-
-                    <dt><u>Через <strong>3</strong> дня</u></dt>
-                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
-                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
-                    <dd><em>Екатеринбург</em> - +17 <sup>o</sup>C</dd>
-
-                    <dt><u>Через <strong>4</strong> дня</u></dt>
-                    <dd><em>Санкт-Петербург</em> - +25 <sup>o</sup>C</dd>
-                    <dd><em>Нижний Новгород</em> - +20 <sup>o</sup>C</dd>
-                    <dd><em>Екатеринбург</em> - +19 <sup>o</sup>C</dd>
-                </dl>
-            </article>
         </section>
 
         <section>
@@ -214,49 +141,76 @@
                 Прогноз погоды составляется с использованием различных научных методов и инструментов, включая наблюдения,
                 компьютерные моделирование и анализ данных. Вот основные шаги, которые включают в себя процесс составления прогноза погоды:
             </p>
-            <ul>
-                <li><p>
-                    <b>Сбор данных:</b> Сначала необходимо собрать множество данных о текущем состоянии атмосферы.
-                    Это включает в себя измерение температуры, давления, влажности, скорости и направления ветра,
-                    атмосферного давления и других параметров на разных высотах в атмосфере. Для этого используются
-                    метеорологические приборы, радары, сателлиты и даже аэрозонды.
-                </p></li>
-                
-                <li><p>
-                    <b>Анализ данных:</b> Собранные данные анализируются для определения текущего состояния атмосферы.
-                    Метеорологи используют методы статистики и численного анализа данных, чтобы понять, какие процессы происходят в атмосфере.
-                </p></li>
 
-                <li><p>
-                    <b>Создание компьютерных моделей:</b> Метеорологические службы используют компьютерные модели атмосферы,
-                    которые основаны на физических законах, чтобы предсказать, как будет развиваться погода в будущем.
-                    Эти модели учитывают сложные взаимодействия атмосферных процессов, такие как конвекция,
-                    циркуляция воздуха и воздействие солнечного излучения.
-                </p></li>
+            <div class="blur-cards">
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">01</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Сбор данных:</b> Сначала необходимо собрать множество данных о текущем состоянии атмосферы.
+                            Это включает в себя измерение температуры, давления, влажности, скорости и направления ветра,
+                            атмосферного давления и других параметров в атмосфере...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">02</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Анализ данных:</b> Собранные данные анализируются для определения текущего состояния атмосферы.
+                            Метеорологи используют методы статистики и численного анализа данных, чтобы понять, какие процессы происходят в атмосфере...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">03</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Создание компьютерных моделей:</b> Метеорологические службы используют компьютерные модели атмосферы,
+                            чтобы предсказать, как будет развиваться погода в будущем.
+                            Эти модели учитывают сложные взаимодействия атмосферных процессов...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+            </div>
 
-                <li><p>
-                    <b>Внесение начальных условий:</b> Для запуска модели необходимо ввести начальные условия,
-                    которые описывают текущее состояние атмосферы. Эти начальные условия получаются из данных, собранных на шаге 1.
-                </p></li>
-
-                <li><p>
-                    <b>Вычисление прогноза:</b> Компьютерная модель выполняет расчеты на основе начальных условий и физических законов.
-                    Модель предсказывает, как будут меняться параметры погоды (температура, осадки, ветер и др.)
-                    в течение определенного периода времени.
-                </p></li>
-
-                <li><p>
-                    <b>Проверка и коррекция:</b> Полученные прогнозы сравниваются с реальными данными о погоде, чтобы оценить их точность.
-                    Если прогноз оказывается неточным, метеорологи могут корректировать модель,
-                    внести изменения в начальные условия или учесть дополнительные данные.
-                </p></li>
-
-                <li><p>
-                    <b>Публикация и интерпретация:</b> Итоговые прогнозы публикуются для широкой общественности и других заинтересованных сторон.
-                    Метеорологи интерпретируют результаты и предостерегают общественность от возможных погодных явлений,
-                    таких как штормы, сильные дожди или жары.
-                </p></li>
-            </ul>
+            <div class="rays-cards">
+                <div class="rays-card">
+                    <h2>Внесение начальных условий</h2>
+                    <h1>01</h1>
+                    <p>
+                        Для запуска модели необходимо ввести начальные условия,
+                        которые описывают текущее состояние атмосферы. Эти начальные условия получаются из данных, собранных на шаге 1.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+        
+                <div class="rays-card">
+                    <h2>Вычисление прогноза</h2>
+                    <h1>02</h1>
+                    <p>
+                        Компьютерная модель выполняет расчеты на основе начальных условий и физических законов.
+                        Модель предсказывает, как будут меняться параметры погоды (температура, осадки, ветер и др.)
+                        в течение определенного периода времени.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+        
+                <div class="rays-card">
+                    <h2>Проверка и коррекция</h2>
+                    <h1>03</h1>
+                    <p>
+                        Полученные прогнозы сравниваются с реальными данными о погоде, чтобы оценить их точность.
+                        Если прогноз оказывается неточным, метеорологи могут корректировать модель,
+                        внести изменения в начальные условия или учесть дополнительные данные.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+            
             <p>
                 Прогнозы погоды могут быть составлены на различные периоды времени: краткосрочные (несколько часов вперед),
                 среднесрочные (несколько дней) и долгосрочные (несколько недель). Точность прогноза обычно уменьшается с
@@ -274,161 +228,59 @@
                 </div>
             </div>  
         </section>
-
-        <section id="gallery">
-            <h2>Галерея</h2>
-            <div class="gallery">
-                <img src="https://i.pinimg.com/564x/b0/bf/ca/b0bfca432f05e73ca28dc144667f83c2.jpg" class="gallery-image">			
-                <img src="https://i.pinimg.com/564x/1f/7b/32/1f7b3235ed0d3481c064e7133331bbff.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/bb/74/d1/bb74d135520764c19ba68994f09366d5.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/04/64/77/0464775f12b79472a0832592706ef58b.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/9d/bc/77/9dbc779ef27b5bb2ed45541a3641fc6a.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/68/d8/89/68d8895c42113cd2d677eb2576394877.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/df/16/3b/df163b410bb587cbc7ea5ad7d6bd5d58.jpg" class="gallery-image">	
-                <img src="https://i.pinimg.com/564x/e4/f1/17/e4f11727f81646d47f357cc931842895.jpg" class="gallery-image">	
+    
+        <section>
+            <h2 id="contacts">Регистрация</h2>
+            <div class="form-section">
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="boxx">
+                    <div class="square" style="--i:0;"></div>
+                    <div class="square" style="--i:1;"></div>
+                    <div class="square" style="--i:2;"></div>
+                    <div class="square" style="--i:3;"></div>
+                    <div class="square" style="--i:4;"></div>
+                    <div class="form-container">
+                        <div class="form">
+                            <h2>Регистрация</h2>
+                            <form>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Номер телефона">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Почта">
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" placeholder="Пароль">
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" value="Отправить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="top-left-sidebar" class="sidebar">
-            <h3>Другие сайты с погодой</h3>
-            <ul>
-                <li>
-                    <a href="https://www.gismeteo.ru/">Gismeteo</a>
-                    <ul>
-                        <li><a href="https://www.gismeteo.ru/maps/eur/prc/">Карта осадков</a></li>
-                        <li><a href="https://www.gismeteo.ru/maps/eur/temp/">Карта температуры</a></li>
-                        <li><a href="https://www.gismeteo.ru/maps/eur/wind/">Карта ветров</a></li>
-                        <li><a href="https://www.gismeteo.ru/maps/eur/clou/">Карта облачности</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://yandex.ru/pogoda">Яндекс.Погода</a>
-                    <ul>
-                        <li><a href="https://yandex.ru/pogoda/maps">Карта осадков</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    
-        <section id="bottom-left-sidebar" class="sidebar">
-            <h3>Отправить отчёт об ошибке</h3>
-            <form method="get">
-                <label for="error-type">
-                    Тип ошибки
-                    <select name="error-type" multiple size="2" required>
-                        <option value="typo">Опечатка в тексте</option>
-                        <option value="bug">Баг в работе логики</option>
-                    </select>
-                </label>
-    
-                <label for="error-text">
-                    Описание ошибки
-                    <textarea
-                        placeholder="Подробный текст с описанием ошибки"
-                        name="error-text"
-                        cols="25"
-                        rows="5"
-                        minlength="50"
-                        maxlength="500"
-                        required
-                    ></textarea>
-                </label>
-                <label for="error-time">
-                    Время возникновения ошибки
-                    <input type="datetime-local" min="2023-01-01" max="2024-01-01" name="error-time">
-                </label>
-                <button>
-                    <span>Отправить</span>
-                </button>
-            </form>
-        </section>
-    
-        <section id="right-sidebar" class="sidebar">
-            <h3>Регистрация</h3>
-            <form method="get" name="register-form">
-                <label for="register-name">
-                    Имя
-                    <input 
-                        type="text"
-                        placeholder="Иван Иванов"
-                        name="register-name"
-                        required
-                    >
-                </label>
-                <label for="register-phone">
-                    Телефон
-                    <input 
-                        type="tel"
-                        placeholder="+79999999999"
-                        name="register-phone"
-                        pattern="^\+(?:\d{1,4}\s*){1,14}\d$"
-                    >
-                </label>
-                <label for="register-email">
-                    Email
-                    <input
-                        type="email"
-                        placeholder="ivanov@example.com"
-                        name="register-email"
-                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                        required
-                    >
-                </label>
-                <label for="register-password">
-                    Пароль
-                    <input
-                        type="password"
-                        placeholder="··········"
-                        name="register-password"
-                        required
-                    >
-                </label>
-                <label for="register-photo">
-                    Фото профиля
-                    <input type="file" name="register-photo">
-                </label>
-                <label for="register-subscription">
-                    Получать данные о погоде на почту
-                    <input type="checkbox" name="register-subscription" checked>
-                </label>
-                <fieldset id="city-choice">
-                    <legend>Город проживания</legend>
-                    <label for="register-city">
-                        <input type="radio" name="register-city">
-                        Москва
-                    </label>
-                    <label for="register-city">
-                        <input type="radio" name="register-city">
-                        Санкт-Петербург
-                    </label>
-                    <label for="register-city">
-                        <input type="radio" name="register-city">
-                        Нижний Новгород
-                    </label>
-                </fieldset>
-                <label id="registration-submit" for="register-submit">
-                    <button name="register-submit">
-                        <span>Отправить</span>
-                    </button>
-                </label>
-            </form>
         </section>
     </main>
     <footer>
-        <div id="social-media">
-            <div class="social-button facebook">
-                Facebook
-            </div>
-            <div class="social-button twitter">
-                Twitter
-            </div>
-            <div class="social-button instagram">
-                Instagram
-            </div>
-        </div>
-
         <section>
             <h2 id="contacts">Контакты</h2>
+            <div id="social-media">
+                <div class="social-button facebook">
+                    Facebook
+                </div>
+                <div class="social-button twitter">
+                    Twitter
+                </div>
+                <div class="social-button instagram">
+                    Instagram
+                </div>
+            </div>    
             <i>Где мы находимся?</i>
             <div id="map" style="width: 100%">
                 <iframe 
@@ -439,13 +291,6 @@
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Moscow,%20Russia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 ></iframe>
             </div>
-            <!--Ссылки на электронную почту и номер телефона-->
-            <address>
-                <a href="mailto:sendemail@gmail.com">Отправить <abbr>email</abbr></a><br>
-            </address>
-            <address>
-                <a href="tel:01234567890">Позвонить</a>
-            </address>
         </section>
         
         <section>
