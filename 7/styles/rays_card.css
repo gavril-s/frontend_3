@@ -57,6 +57,7 @@
 	font-size: normal;
 	font-weight: bold;
 	z-index: 2;
+	border-radius: 20%;
 }
 
 .rays-cards .rays-card::before {

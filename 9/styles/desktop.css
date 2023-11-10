@@ -1,0 +1,57 @@
+@media screen and (min-width: 1001px) and (max-width: 2560px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+            "header header header"
+            "registration main map"
+            "footer footer footer";
+        gap: 75px;
+    }
+
+    header {
+        grid-area: header;
+    }
+    
+    #registration {
+        grid-area: registration;
+    }
+
+    #map {
+        grid-area: map;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    header {
+        width: 40%;
+        margin: auto auto;
+    }
+
+    .mobile-nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    .gallery-image {
+        max-width: 30%;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 5px 20px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

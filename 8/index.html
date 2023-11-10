@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+		<nav class="desktop-nav">
+            <img id="desktop-header-logo" src="images/favicon.ico" alt="Иконка">
+			<ul id="desktop-header-nav-list">
+                <li><a href="#top">К началу</a></li>     
+                <li><a href="#moscow">Погода в Москве</a></li>
+                <li><a href="#other-cities">Погода в других городах</a></li>
+                <li><a href="#how-it-works">Как работает прогноз погоды?</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+			</ul>
+			<hr>
+		</nav>
+
+        <div class="mobile-nav">
+            <div class="burger-menu">
+                <input id="burger-toggle" type="checkbox" />
+                <label class="burger-button" for="burger-toggle">
+                    <span></span>
+                </label>
+            
+                <ul class="burger-box">
+                    <li><a class="burger-item" href="#top">К началу</a></li>
+                    <li><a class="burger-item" href="#moscow">Погода в Москве</a></li>
+                    <li><a class="burger-item" href="#other-cities">Погода в других городах</a></li>
+                    <li><a class="burger-item" href="#how-it-works">Как работает прогноз погоды</a></li>
+                    <li><a class="burger-item" href="#gallery">Галерея</a></li>
+                    <li><a class="burger-item" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+ 
+            <h2>Погода</h2>
+            <img src="images/favicon.ico" alt="Иконка"></img>
+        </div>
+	</header>
+
+    <main>
+        <!--Заголовок первого уровня (начало страницы)-->
+        <h1 id="top">Погода</h1>
+            <article>
+                <!--Блок с цитатой-->
+                <b><i>
+                    <!--Цитата-->
+                    <blockquote><q>Холод - только для погоды. Не впускайте его в свою душу.</q></blockquote>
+                    <!--Источник цитаты-->
+                    <cite>
+                        <a id="quote-link" href="https://resheto.net/raznosti/1525-tsitaty-o-pogode">
+                            Федор Достоевский
+                        </a>
+                    </cite>
+                </i></b>
+            </article>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="moscow">Погода в Москве</h2>
+            <!--Изображение со ссылкой на сайт с погодой-->
+            <a href="https://www.gismeteo.ru/weather-moscow-4368/">
+                <img class="center-picture picture" src="images/moscow.jpg" alt="Москва" width="500">
+            </a>
+            <!--Упорядоченный список с погодой на сегодня и завтра-->
+            <ol>
+                <li>
+                    <p>Погода на <strong>сегодня</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +3 - +17 <sup>o</sup>C</li>
+                        <li>Ветер: 6 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Погода на <strong>завтра</strong></p>
+                    <!--Неупорядоченный список со значениями температуры и ветра-->
+                    <ul>
+                        <li>Температура: +14 - +20 <sup>o</sup>C</li>
+                        <li>Ветер: 3 <sub>м/с</sub></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <!--Заголовок второго уровня-->
+            <h2 id="other-cities">Погода в других городах</h2>
+
+            <div id="glassmorphism-cards">
+                <div class="glassmorphism-card-container">
+                    <div class="glassmorphism-card">
+                        <div class="glassmorphism-card-content">
+                            <h2>Санкт-Петербург</h2>
+                            <p>-1 Дождь</p>
+                        </div>
+                    </div>
+                    <div class="glassmorphism-card-square-container">
+                        <div class="glassmorphism-card-square glassmorphism-card-square-top"></div>
+                        <div class="glassmorphism-card-square glassmorphism-card-square-bottom"></div>
+                    </div>
+                </div>
+                <div class="glassmorphism-card-container">
+                    <div class="glassmorphism-card">
+                        <div class="glassmorphism-card-content">
+                            <h2>Нижний Новгород</h2>
+                            <p>+5 Ветрено</p>
+                        </div>
+                    </div>
+                    <div class="glassmorphism-card-square-container">
+                        <div class="glassmorphism-card-square glassmorphism-card-square-top"></div>
+                        <div class="glassmorphism-card-square glassmorphism-card-square-bottom"></div>
+                    </div>
+                </div>
+                <div class="glassmorphism-card-container">
+                    <div class="glassmorphism-card">
+                        <div class="glassmorphism-card-content">
+                            <h2>Екатеринбург</h2>
+                            <p>-5 Снег</p>
+                        </div>
+                    </div>
+                    <div class="glassmorphism-card-square-container">
+                        <div class="glassmorphism-card-square glassmorphism-card-square-top"></div>
+                        <div class="glassmorphism-card-square glassmorphism-card-square-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="how-it-works">Как работает прогноз погоды?</h2>
+            <img id="supercomputer-image" src="images/supercomputer.jpg">
+            <p>
+                Прогноз погоды составляется с использованием различных научных методов и инструментов, включая наблюдения,
+                компьютерные моделирование и анализ данных. Вот основные шаги, которые включают в себя процесс составления прогноза погоды:
+            </p>
+
+            <div class="blur-cards">
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">01</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Сбор данных:</b> Сначала необходимо собрать множество данных о текущем состоянии атмосферы.
+                            Это включает в себя измерение температуры, давления, влажности, скорости и направления ветра,
+                            атмосферного давления и других параметров в атмосфере...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">02</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Анализ данных:</b> Собранные данные анализируются для определения текущего состояния атмосферы.
+                            Метеорологи используют методы статистики и численного анализа данных, чтобы понять, какие процессы происходят в атмосфере...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+                <div class="blur-card">
+                    <h2 class="blur-card-circle">03</h2>
+                    <div class="blur-card-content">
+                        <p>
+                            <b>Создание компьютерных моделей:</b> Метеорологические службы используют компьютерные модели атмосферы,
+                            чтобы предсказать, как будет развиваться погода в будущем.
+                            Эти модели учитывают сложные взаимодействия атмосферных процессов...
+                        </p>
+                        <button>Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rays-cards">
+                <div class="rays-card">
+                    <h2>Внесение начальных условий</h2>
+                    <h1>01</h1>
+                    <p>
+                        Для запуска модели необходимо ввести начальные условия,
+                        которые описывают текущее состояние атмосферы. Эти начальные условия получаются из данных, собранных на шаге 1.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+        
+                <div class="rays-card">
+                    <h2>Вычисление прогноза</h2>
+                    <h1>02</h1>
+                    <p>
+                        Компьютерная модель выполняет расчеты на основе начальных условий и физических законов.
+                        Модель предсказывает, как будут меняться параметры погоды (температура, осадки, ветер и др.)
+                        в течение определенного периода времени.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+        
+                <div class="rays-card">
+                    <h2>Проверка и коррекция</h2>
+                    <h1>03</h1>
+                    <p>
+                        Полученные прогнозы сравниваются с реальными данными о погоде, чтобы оценить их точность.
+                        Если прогноз оказывается неточным, метеорологи могут корректировать модель,
+                        внести изменения в начальные условия или учесть дополнительные данные.
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+            
+            <p>
+                Прогнозы погоды могут быть составлены на различные периоды времени: краткосрочные (несколько часов вперед),
+                среднесрочные (несколько дней) и долгосрочные (несколько недель). Точность прогноза обычно уменьшается с
+                увеличением времени, поскольку атмосферные процессы становятся более сложными и
+                переменными на долгосрочных временных интервалах.
+            </p>
+
+            <div class="video-card">
+                <div class="video-card-video">
+                    <iframe width="95%" height="400rem" src="https://www.youtube.com/embed/h5j8wZgfui4"></iframe>
+                </div>
+                <div class="video-card-content">
+                    <b>Видео</b>
+                    <p>Это видео о том, почему прогнозы погоды часто оказываются неверными</p>
+                </div>
+            </div>  
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/564x/b0/bf/ca/b0bfca432f05e73ca28dc144667f83c2.jpg" class="gallery-image">			
+                <img src="https://i.pinimg.com/564x/1f/7b/32/1f7b3235ed0d3481c064e7133331bbff.jpg" class="gallery-image">	
+                <img src="https://i.pinimg.com/564x/bb/74/d1/bb74d135520764c19ba68994f09366d5.jpg" class="gallery-image">	
+                <img src="https://i.pinimg.com/564x/04/64/77/0464775f12b79472a0832592706ef58b.jpg" class="gallery-image">	
+                <img src="https://i.pinimg.com/564x/9d/bc/77/9dbc779ef27b5bb2ed45541a3641fc6a.jpg" class="gallery-image">	
+                <img src="https://i.pinimg.com/564x/68/d8/89/68d8895c42113cd2d677eb2576394877.jpg" class="gallery-image">	
+                <img src="https://i.pinimg.com/564x/df/16/3b/df163b410bb587cbc7ea5ad7d6bd5d58.jpg" class="gallery-image">	
+            </div>
+        </section>
+    </main>
+
+    <div id="registration">
+        <div class="form-container">
+            <h2>Регистрация</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Номер телефона">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Почта">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="map">
+        <i>Где мы находимся?</i>
+        <div id="map" style="width: 90%">
+            <iframe 
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Moscow,%20Russia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-item">
+            <h3>О нас</h3>
+            <p>Сайт о погоде и о том как люди её предсказывают.</p>
+        </div>
+
+        <div class="footer-item">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="#top">К началу</a></li>
+                <li><a href="#moscow">Погода в Москве</a></li>
+                <li><a href="#other-cities">Погода в других городах</a></li>
+                <li><a href="#how-it-works">Как работает прогноз погоды?</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+            </ul>
+        </div>  
+
+        <div id="contacts" class="footer-item">
+            <h3>Контакты</h3>
+            <div id="social-media">
+                <div class="social-button facebook">
+                    Telegram
+                </div>
+                <div class="social-button twitter">
+                    Twitter
+                </div>
+                <div class="social-button instagram">
+                    VK
+                </div>
+            </div>   
+        </div>
+    </footer>
+</body>
+</html>
