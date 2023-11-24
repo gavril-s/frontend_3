@@ -23,4 +23,3 @@ function Accumulator(startingValue) {
         this.value += newValue;
     };
 }
-
