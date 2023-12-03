@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--названиие сайта-->
+  <title>Погода</title>
+  <!--фавиконка-->
+  <link rel="icon" href="images/cloud.png" sizes="any">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="body-content">
+    <div class="full-menu">
+      <header>
+        <nav class="pc-menu">
+          <img id="headerLogo" src="images/cloud.png" alt="Логотип сайта">
+          <ul>
+            <li><a href="#top">Начало сайта</a></li>
+            <li><a href="#weather">Погода на сегодня</a></li>
+            <li><a href="#clothes">Как одеться по погоде</a></li>
+            <li><a href="#contacts">Как с нами связаться</a></li>
+            <li><a href="#gallery">Галлерея</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="burger-icon"></label>
+          <div class="menu-items">
+            <p><a href="#top" class="head-a">Начало сайта</a></p>
+            <p><a href="#weather" class="head-a">Погода на сегодня</a></p>
+            <p><a href="#clothes" class="head-a">Как одеться по погоде</a></p>
+            <p><a href="#contacts" class="head-a">Как с нами связаться</a></p>
+            <p><a href="#gallery" class="head-a">Галлерея</a></p>
+          </div>
+        </div>
+      </header>
+    </div>
+    
+    
+    <div class="full-main">
+      <main>
+        <section>
+          <!--заголовок h1-->
+          <h1 id="top"><p>Сайт Погода</p></h1>
+          <!--изображение-ссылка-->
+          <p>
+            Добро пожаловать на наш сайт, где вы можете найти самую актуальную информацию о погоде на ближайший месяц. 
+          </p>
+          <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0">
+          <img class="picture center float_left" src="https://ds24-usinsk.komi.prosadiki.ru/media/2022/02/16/1293558154/67130346.png" alt="Картинка с погодой" width="300" usemap="#shapess">
+          </a>
+          <p>
+            Мы стремимся обеспечить вас всем необходимым, чтобы вы могли вовремя подготовиться к погодным условиям. Наша команда уделяет большое внимание точности и достоверности данных. Мы используем современные технологии и обширные источники информации, чтобы предоставлять вам наиболее точные прогнозы. На страницах нашего сайта вы найдете подробные прогнозы на весь месяц, которые помогут вам спланировать свои будущие мероприятия и активности. Мы также предоставляем графики и диаграммы, чтобы визуализировать изменения погоды на протяжении месяца.Надеемся, что наш сайт станет вашим надежным помощником в следующем месяце, позволяя вам быть в курсе погодных изменений и принимать обоснованные решения. Благодарим вас за посещение, и желаем приятного пользования нашими услугами!
+          </p>
+          <article>
+          <!--отформатированный текст-->
+            <br><blockquote>Пого́да — совокупность значений метеорологических элементов и атмосферных явлений, наблюдаемых в определённый момент времени в той или иной точке пространства.<cite><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0">Wiki</a></cite></blockquote></br>
+          </article>
+        </section>
+    
+        
+    
+        <section>
+          <!--заголовок h2-->
+          <h2 id="weather">
+            <p>
+              <b>Узнать погоду на сегодня в Москве</b>
+            </p>
+          </h2>
+          <article>
+            <!--упорядоченный список с вложенным маркированным списокм-->
+            <ol type="I" start="2">
+              <li>
+                <b>Утро 15°C</b>
+                <ul type="disc"><li>Ветер</li></ul>
+              </li>
+              <li>
+                <i>День 19°C</i>
+                <ul type="disc">
+                  <li><u>Cолнечно</u></li>
+                  <li><em>Возможена облачность</em></li>
+                </ul>
+              </li>
+              <li>
+                <strong>Вечер 16°C</strong>
+                <ul type="disc"><li>Дождь</li></ul>
+              </li>
+              <li>
+                <sup>Ночь 12°C</sup>
+              <ul type="disc"><li>Дождь и сильный ветер</li></ul>
+              </li>
+            </ol>
+          </article>
+        </section>
+    
+        <section>
+          <!--Заголовок h2 и список описаний-->
+          <h2 id="clothes">Как одеться по погоде</h2>
+          <dl>
+            <dt class="div blue">Дождь</dt>
+            <dd> Наденьте непромокаемую курту</dd>
+            <dd>Или возьмите зонт</dd>
+            <dt class="div yellow">Солнце</dt>
+            <dd>Наденьте легкую одежду</dd>
+            <dd>Также необходимо надеть кепку и очки</dd>
+            <dt class="div gray">Ветер</dt>
+            <dd>Наденьте легкую курту</dd>
+            <dt class="div white">Снег</dt>
+            <dd>Наденьте теплую одежду</dd>
+            <dt class="div dark">Ураган</dt>
+            <dd>Лучше не выходите из дома</dd>
+          </dl>
+        </section>
+    
+        <section>
+          <!--заголовок h3 и ссылка-->
+          <h2>
+            Погода сегодня
+          </h2>
+          <!--Изображени-карта-->
+          <p>
+            Токио, Нью-Йорк и Бостон - это три уникальных и многогранных города, каждый из которых обладает своими особенностями и уникальным характером. <i>Токио</i>, столица Японии, воплощает собой смесь современных технологий и традиций. Этот мегаполис славится своими яркими неоновыми огоньками, модной одеждой и культурным многообразием. Здесь можно увидеть высокие небоскребы и храмы, тихие парки и оживленные уличные ярмарки. Токио - это место, где современность и история сливаются воедино.
+          </p>
+          <div class="cards">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/tokio.jpg">
+              </div>
+              <div class="card-sign">
+                <h4>Токио</h4>
+                <h4>+18°С Дождь</h4>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="images/boston.jpg">
+              </div>
+              <div class="card-sign">
+                <h4>Бостон</h4>
+                <h4>+13°С Облачно</h4>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="images/ny.jpg">
+              </div>
+              <div class="card-sign">
+                <h4>Нью-Йорк</h4>
+                <h4>+12°С Солнечно</h4>
+              </div>
+            </div>
+        </div>
+          <p>
+            <i>Нью-Йорк</i>, город, который никогда не спит, известен своей непрерывной активностью и многообразием культур. Манхэттен с его небоскребами, Центральный парк, Таймс-сквер, Бродвей и множество музеев делают его мировой столицей культуры и развлечений. Здесь можно отведать блюда практически любой национальной кухни и встретить представителей всех уголков мира.
+          </p>
+          <p>
+            <i>Бостон</i>, старейший из трех городов, славится своей богатой историей и образовательными учреждениями, такими как Гарвард и Массачусетский технологический институт. Этот город также известен своими культурными мероприятиями и спортивными командами, такими как «Бостон Ред Сокс» и «Бостон Селтикс». Он предлагает уникальное сочетание колониального наследия и современной жизни.Каждый из этих городов уникален и предоставляет своим жителям и гостям множество возможностей для работы, обучения и развлечений. Они отражают богатство и разнообразие культурного наследия и являются важными мировыми центрами в различных областях.
+          </p>
+        </section>
+    
+        <section>
+          <h2>Давление</h2>
+          <div id="ray-cards">
+            <div class="ray-card">
+              <h2>Здоровье:</h2>
+              <h1>01</h1>
+              <p class="original-text">
+                Повышенное атмосферное давление (высокое) может вызвать ухудшение самочувствия у некоторых людей, 
+                особенно у тех, кто страдает от болезней сердца и легких.
+              </p>
+              <button>Узнать больше</button>
+            </div>
+    
+            <div class="ray-card">
+              <h2>Активность и эффективность:</h2>
+              <h1>02</h1>
+              <p class="original-text">
+                Низкое атмосферное давление, связанное с приближением штормов и пасмурной 
+                погодой, влияет на активность и эффективность некоторых людей. Оно вызывает чувство сонливости и апатии.
+              </p>
+              <button>Узнать больше</button>
+            </div>
+    
+            <div class="ray-card">
+              <h2>Настроение и психологическое состояние:</h2>
+              <h1>03</h1>
+              <p class="original-text">
+                Изменения в атмосферном давлении могут влиять на психологическое состояние некоторых людей. 
+                Например, низкое давление может вызвать депрессию и ухудшение настроения,
+              </p>
+              <button>Узнать больше</button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Принципы определения погоды?</h2>
+          <div id="color-cards">
+            <div class="color-card">
+                <h2 class="color-card-circle">01</h2>
+                <div class="color-card-content">
+                    <p class="original-text">
+                        <b>Наблюдение: </b> Метеорологи измеряют параметры погоды
+                    </p>
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+            <div class="color-card">
+                <h2 class="color-card-circle">02</h2>
+                <div class="color-card-content">
+                  <p class="original-text">
+                    <b>Сбор данных: </b> Данные анализируются для составления статуса погоды
+                  </p>
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+            <div class="color-card">
+                <h2 class="color-card-circle">03</h2>
+                <div class="color-card-content">
+                  <p class="original-text">
+                    <b>Моделирование:</b> Для прогноза будущей погоды используются компьютерные модели
+                  </p>
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+          </div>
+        </section>
+    
+        <section >
+          <h2>Как определяют погоду</h2>
+          <div class="video">
+            <div class="video-video">
+              <iframe src="https://www.youtube.com/embed/6OAtXdd1cQ0?si=MsEWA4PDanLYBpuN"></iframe>
+            </div>
+            <div class="video-sign">
+                <b>Видео</b>
+                <p>Это видео о том, как прогнозируют погоду</p>
+            </div>
+        </div> 
+        </section>
+    
+        <section>
+          <h2>Галлерея</h2>
+          <div class="gallery">
+            <div class="gallery-item1"><img src="https://i.pinimg.com/564x/b0/bf/ca/b0bfca432f05e73ca28dc144667f83c2.jpg" alt=""></div>
+            <div class="gallery-item2"><img src="https://i.pinimg.com/564x/1f/7b/32/1f7b3235ed0d3481c064e7133331bbff.jpg" alt=""> </div>
+            <div class="gallery-item3"><img src="https://i.pinimg.com/564x/bb/74/d1/bb74d135520764c19ba68994f09366d5.jpg" alt=""> </div>
+            <div class="gallery-item4"><img src="https://i.pinimg.com/564x/04/64/77/0464775f12b79472a0832592706ef58b.jpg" alt=""> </div>
+            <div class="gallery-item5"><img src="https://i.pinimg.com/564x/68/d8/89/68d8895c42113cd2d677eb2576394877.jpg"  alt=""> </div>
+            <div class="gallery-item6"><img src="https://i.pinimg.com/564x/e4/f1/17/e4f11727f81646d47f357cc931842895.jpg" alt=""> </div>
+            <div class="gallery-item7"><img src="https://i.pinimg.com/564x/df/16/3b/df163b410bb587cbc7ea5ad7d6bd5d58.jpg" alt=""> </div>
+          </div>
+        </section>
+    
+        <section id="notifications">
+          <div class="notification">
+              <button id="stopNotificationsBtn" class="notification-btn">
+                  <img src="images/notification.png">
+              </button>
+              <div class="notification-sign">
+                  <a id="notificationCounter" class="notification-counter">0 - количество уведомлений</a>
+              </div>
+          </div>
+      </section>
+      <script src="notification.js"></script>
+      
+
+      <section>
+        <h2>Создание списка</h2>
+        <button id="startButton">Начать ввод</button>
+        <ul id="myList"></ul>
+
+        <script src="list.js"></script>
+        
+      </section>
+      <section class="notification-text">
+          <div id="notification-container"></div>
+
+          <script src="script.js"></script>
+      </section>
+      
+
+      
+      
+      </main>
+    </div>
+    
+  
+    <div class="full-form">
+      <section class="form">
+        <h2 id="contacts">Регистрация</h2>
+          <div >
+              <form>
+                  <div class="input-box name">
+                      <input type="text" placeholder="Имя">
+                  </div>
+                  <div class="input-box phone">
+                      <input type="text" placeholder="Номер телефона">
+                  </div>
+                  <div class="input-box mail">
+                      <input type="text" placeholder="Почта">
+                  </div>
+                  <div class="input-box password">
+                      <input type="password" placeholder="Пароль">
+                  </div>
+                  <button class="button3">Подтвердить</button>
+              </form>
+          </div>
+      </section> 
+    </div>
+
+    
+  
+  
+    <div class="full-footer">
+      <footer>
+        <div class="footer-item information">
+          <h3>О нас</h3>
+          <p>Наш сайт о погоде работает с 2023 года предоставляя самые точные прогнозы и помогая многим людям правильно одеваться перед выходом на улицу</p> 
+        </div>
+    
+        <div class="footer-item navigation">
+          <h3>Навигация</h3>
+            <a href="#top">Начало сайта</a><br>
+            <a href="#weather">Погода на сегодня</a><br>
+            <a href="#clothes">Как одеться по погоде</a><br>
+            <a href="#contacts">Как с нами связаться</a><br>
+            <a href="#gallery">Галлерея</a><br>
+        </div>
+    
+        <div class="footer-item contacts">
+          <h3>Контакты</h3>
+          <div id="social-media">
+            <div class="sm-button tg">
+              <img src="images/tg.png">
+            </div>
+            <div class="sm-button youtube">
+              <img src="images/youtube.png">
+            </div>
+            <div class="sm-button inst">
+              <img src="images/tiktok.png">
+            </div>
+          </div>
+        </div>
+    
+        <div class="copyright">
+          <p>created by Timofei Chernykh</p>
+        </div>
+      </footer>
+    </div>
+  
+  </div>
+</body>
+
+</html>
