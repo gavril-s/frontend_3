@@ -325,7 +325,7 @@ dl > dt {
     display: none;
     position: absolute;
     background-color: whitesmoke;
-    bottom: -25%;
+    bottom: 100%;
     width: 140px;
     box-shadow: 0px 8px 16px 0px;
     z-index: 1;
@@ -335,7 +335,7 @@ dl > dt {
     pointer-events: none;
 }
 
-.notification-sign  a {
+.notification-sign a {
     color: black;
     padding: 4% 3%;
     display: block;
@@ -372,4 +372,8 @@ dl > dt {
 .notification-btn:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+#append-to-list-button {
+    width: 40%;
 }
