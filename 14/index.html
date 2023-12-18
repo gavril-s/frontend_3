@@ -236,45 +236,65 @@
         </section>
 
         <section>
-            <h2>Создание списка</h2>
-            <button id="append-to-list-button">Начать ввод</button>
-            <ul id="list"></ul>
+            <h2>Список</h2>
+            <ul class="selectable-list">
+                <li>Элемент 1</li>
+                <li>Элемент 2</li>
+                <li>Элемент 3</li>
+                <li>Элемент 4</li>
+            </ul>
         </section>
 
         <section>
-            <h2>Уведомления</h2>
-            <div id="notifications">
-                <div class="notification">
-                    <button id="stopNotificationsBtn" class="notification-btn">
-                        <img src="images/notification.png">
-                    </button>
-                    <div class="notification-sign">
-                        <a id="notificationCounter" class="notification-counter">0 - количество уведомлений</a>
-                    </div>
+            <h2>Слайдер</h2>
+            <div id="slider-container">
+                <div id="slider-bar"></div>
+                <div id="slider-handle"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img class="main-image" src="images/moscow.jpg">
+                <div>
+                    <img class="thumbnail" src="images/moscow.jpg" onclick="changeImage('images/moscow.jpg')">
+                    <img class="thumbnail" src="images/spb.jpg" onclick="changeImage('images/spb.jpg')">
+                    <img class="thumbnail" src="images/novgorod.jpg" onclick="changeImage('images/novgorod.jpg')">
                 </div>
-                <div id="notification-container"></div>
             </div>
         </section>
 
         <section>
-            <h2>Параллакс</h2>
-            <div class="parallax-container">
-                <img src="images/parallax.jpeg">
-                <div class="overlay-text">Москва</div>
+            <h2>Ссылки</h2>
+            <div class="contents">
+                <div><a href="https://google.com">Google</a></div><br>
+                <div><a href="https://yandex.ru">Yandex</a></div><br>
+                <div><a href="https://bing.ru">Bing</a></div>
             </div>
         </section>
 
-        <section>
-            <h2>Центрирование изображения</h2>
-            <div class="center-image-container">
-                <img class="center-image" width="50%" src="images/other-cities.png">
+        <section id="cart-section">
+            <h2>Корзина</h2>
+
+            <div class="flex">
+                <div class="product" data-price="200" draggable="true" ondragstart="drag(event)"><img src="images/umbrella.png" class="item-image"><p>Зонтик - 200₽</p></div>
+                <div class="product" data-price="450" draggable="true" ondragstart="drag(event)"><img src="images/hat.png" class="item-image"><p>Шляпа - 450₽</p></div>
+                <div class="product" data-price="1600" draggable="true" ondragstart="drag(event)"><img src="images/glasses.png" class="item-image"><p>Очки - 1600₽</p></div>
             </div>
-        </section>  
+
+            <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Всего: <span id="total">0</span>₽</p>
+            </div>
+        </section>
 
         <section>
             <h2>Бесконечный контент</h2>
             <div class="infinite-content"></div>
         </section>
+
+        <div id="animated-1"></div>
+        <div id="animated-2"></div>
     </main>
 
     <!--<script src="scripts/registration.js"></script>-->
@@ -282,11 +302,15 @@
     <!--<script src="scripts/captcha.js"></script>-->
     <!--<script src="scripts/accumulator.js"></script>-->
     <script src="scripts/truncate.js"></script>
-    <!--<script src="scripts/cart.js"></script>-->
+    <script src="scripts/cart.js"></script>
     <script src="scripts/list.js"></script>
-    <script src="scripts/notifications.js"></script>
+    <!--<script src="scripts/notifications.js"></script>-->
     <script src="scripts/infinite_content.js"></script>
-    <script src="scripts/center_image.js"></script>
-    <script src="scripts/parallax.js"></script>
+    <!--<script src="scripts/center_image.js"></script>-->
+    <!--<script src="scripts/parallax.js"></script>-->
+    <script src="scripts/contents.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/animation.js"></script>
 </body>
 </html>
