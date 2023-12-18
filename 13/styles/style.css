@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Russo+One&display=swap');
+@import url("desktop.css");
+@import url("tablet.css");    
+@import url("phone.css");
+@import url("glassmorphism_card.css");
+@import url("rays_card.css");
+@import url("video_card.css");
+@import url("blur_card.css");
+@import url("social_media.css");
+
+:root {
+    --primary-color: white;
+    --secondary-color: #C70039;
+    --tertiary-color: #141e4677;
+    --background-color: #141E46;
+    --background-opacity: 55%;
+    --inpput-focus-opacity: 20%;
+    --glassmorphism-alpha: 0.7;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: color-mix(in srgb, var(--background-color) var(--background-opacity), white);;
+    color: var(--primary-color);
+}
+
+main {  
+    margin: auto auto;
+}
+
+footer {
+    margin: auto auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+form > * {
+    margin: 5%;
+}
+
+form label {
+    display: block;
+}
+
+form label > * {
+    display: block;
+}
+
+form label > input {
+    display: block;
+    border-style: groove;
+}
+
+form label > input:focus {
+    background-color: color-mix(in srgb, var(--tertiary-color) var(--inpput-focus-opacity), white);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--tertiary-color);
+}
+
+a > img {
+    color: var(--primary-color);
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li::marker {
+    content: '';
+}
+
+*::placeholder {
+    font-size: 90%;
+}
+
+dl > dt {
+    padding-top: 2%;
+}
+
+.center-picture {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+.picture {
+    padding: 5%;
+    border-radius: 10%;
+    border-style: dashed;
+    margin: 5% auto;
+}
+
+#desktop-header-logo {
+    display: block;
+    width: 8%;
+    margin: 0% auto;
+}
+
+#desktop-header-nav-list > li {
+    display: inline-block;
+    margin: 1% 3%;
+    text-decoration: dashed underline var(--primary-color) 1px;
+}
+
+#supercomputer-image {
+    float: right;
+    width: 50%;
+    border-radius: 10%;
+    border-style: dashed;
+    margin: 1% 3%;
+    padding: 1%;
+}
+
+#city-choice > label{
+    margin: 5%;
+}
+
+#city-choice > label > input {
+    display: inline;
+}
+
+#registration-submit {
+    margin-top: 7%;
+}
+
+#map > iframe {
+    width: 100%;
+    height: 30em;
+    margin: 1% 0% 2% 0%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "g1 g1 g2 g3"
+        "g4 g5 g2 g6"
+        "g4 g7 g7 g7";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.gallery-image:nth-child(1) {
+    grid-area: g1;
+}
+
+.gallery-image:nth-child(2) {
+    grid-area: g2;
+}
+
+.gallery-image:nth-child(3) {
+    grid-area: g3;
+}
+
+.gallery-image:nth-child(4) {
+    grid-area: g4;
+}
+
+.gallery-image:nth-child(5) {
+    grid-area: g5;
+}
+
+.gallery-image:nth-child(6) {
+    grid-area: g6;
+}
+
+.gallery-image:nth-child(7) {
+    grid-area: g7;
+}
+
+.gallery-image {
+    border-radius: 5%;
+    cursor: cell;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.5);
+}
+
+#glassmorphism-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10% 0%;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    border-style: dashed;
+    align-items: center;
+}
+
+#draw-button {
+    width: 10%;
+}
+
+#canvas {
+    height: 200px;
+    background-color: transparent;
+}
+
+.point {
+    width: 30px;
+    height: 30px;
+    background: url("../images/favicon.ico");
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+}
+
+#captcha-section {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#captcha-section > * {
+    width: 40%;
+    margin: 1% auto;
+}
+
+#captcha-input {
+    margin-top: 2%;
+}
+
+#accumulator-section {
+    text-align: center;
+}
+
+#accumulator-button {
+    width: 10%;
+    margin: auto;
+}
+
+#cart {
+    border: 0.1rem solid #ccc;
+    padding: 1%;
+}
+
+#cart > div {
+    margin: 1rem auto;
+}
+
+.cart-items{
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.cart-items > *{
+    margin: 5%;
+}
+
+.cart-item-image{
+    width: 5rem;
+    height: 5rem;
+    margin: 10%;
+}
+
+.cart-functions {
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.cart-functions > * {
+    margin: 5%;
+}
+
+#notifications {
+    display: flex;
+    flex-direction: row;
+}
+
+.notification-count {
+    color: red; 
+}
+
+.notification-btn > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-sign {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    bottom: 100%;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.notification-sign a {
+    color: black;
+    padding: 4% 3%;
+    display: block;
+}
+
+.notification-sign  a:hover {
+    background-color: whitesmoke;
+}
+
+.notification:hover .notification-sign  {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.notification:hover .notification-btn {
+    background-color: aqua;
+}
+
+.notification-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#append-to-list-button {
+    width: 40%;
+}
+
+.parallax-container {
+    width: 1000px;
+    height: 800px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-container img {
+    top: 50%;
+    margin-left: 0;
+    transition: transform 0.5s ease; 
+}
+
+.overlay-text {
+    margin-top: 20%;
+    position: absolute;
+    transition: transform 0.5s ease;
+    top: 0;
+    left: 40%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}

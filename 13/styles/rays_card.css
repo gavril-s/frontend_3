@@ -1,0 +1,103 @@
+.rays-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.rays-cards .rays-card {
+	display: flex;
+	flex-direction: column;
+	width: 15rem;
+	margin: 1rem;
+	background: #273746;
+	color: white;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 1rem;
+	transition: 1s;
+}
+
+.rays-cards .rays-card h2 {
+	font-size: large;
+	margin-top: 3rem;
+	padding: 1rem 1rem 0.25rem;
+	z-index: 2;
+}
+
+.rays-cards .rays-card h1 {
+	position: absolute;
+	top: 7rem;
+	right: 1.5rem;
+	color: #1F51FF;
+	font-size: 4rem;
+	font-weight: bold;
+	opacity: 0;
+	transition: 1s;
+	z-index: 2;
+}
+
+.rays-cards .rays-card:hover h1 {
+	opacity: 1;
+	top: 0rem;
+}
+
+.rays-cards .rays-card p {
+	padding: 0 1rem 1rem;
+	z-index: 2;
+}
+
+.rays-cards .rays-card button {
+	padding: 0.5rem 2rem;
+	margin: 0 3rem 5rem;
+	background: white;
+	color: #273746;
+	border: none;
+	font-size: normal;
+	font-weight: bold;
+	z-index: 2;
+	border-radius: 20%;
+}
+
+.rays-cards .rays-card::before {
+	content: "";
+	position: absolute;
+	width: 9rem;
+	left: 4.5rem;
+	top: -50%;
+	height: 200%;
+	background: transparent;
+	animation: rotate 4s linear infinite;
+	transition: 0.5s ease-out;
+}
+
+.rays-cards:has(.rays-card:hover) > .rays-card {
+	opacity: 0.5;
+}
+
+.rays-cards .rays-card:hover {
+	opacity: 1 !important;
+}
+
+.rays-cards .rays-card:hover::before {
+	background: linear-gradient(90deg, #1F51FF, #000080);
+}
+
+.rays-cards .rays-card::after {
+	content: "";
+	position: absolute;
+	background: #273746;
+	inset: 5px;
+	border-radius: 1rem;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
